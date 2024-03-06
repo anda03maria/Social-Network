@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="148.0" prefWidth="345.0" style="-fx-background-image: url('org/example/lab7/v882batch2-kul-05.jpg'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab7.controller.ManageRequestController">
+   <children>
+      <Label layoutX="61.0" layoutY="14.0" text="Do you want to be friends?">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="93.0" layoutY="74.0" mnemonicParsing="false" onAction="#handleAccept" prefHeight="36.0" prefWidth="61.0" text="Yes">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="195.0" layoutY="74.0" mnemonicParsing="false" onAction="#handleDeny" prefHeight="36.0" prefWidth="61.0" text="No">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

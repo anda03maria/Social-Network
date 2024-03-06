@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="600.0" style="-fx-background-image: url('org/example/lab7/v882batch2-kul-03.jpg'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab7.controller.LoginController">
+   <children>
+      <Button fx:id="loginButton" layoutX="120.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="39.0" prefWidth="90.0" text="Log In" textAlignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="signupButton" layoutX="381.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleSignup" prefHeight="39.0" prefWidth="99.0" text="SIgn Up" textAlignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="153.0" layoutY="7.0" prefHeight="51.0" prefWidth="295.0" text="Do you have an account?">
+         <font>
+            <Font name="Berlin Sans FB" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="99.0" prefHeight="25.0" prefWidth="78.0" text="  Username" textAlignment="RIGHT">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="140.0" prefHeight="25.0" prefWidth="78.0" text="  FIrst name">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="188.0" prefHeight="25.0" prefWidth="78.0" text="  Last name" textAlignment="RIGHT">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="239.0" prefHeight="25.0" prefWidth="78.0" text="         Email" textAlignment="RIGHT">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameField" layoutX="247.0" layoutY="99.0" />
+      <TextField fx:id="firstNameField" layoutX="247.0" layoutY="140.0" />
+      <TextField fx:id="lastNameField" layoutX="247.0" layoutY="188.0" />
+      <TextField fx:id="emailField" layoutX="247.0" layoutY="239.0" />
+      <Separator layoutX="-3.0" layoutY="401.0" prefHeight="4.0" prefWidth="607.0" />
+      <Label layoutX="265.0" layoutY="411.0" prefHeight="25.0" prefWidth="70.0" text="Paging">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="459.0" prefHeight="25.0" prefWidth="90.0" text="        Page size" textAlignment="RIGHT">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Slider fx:id="pageSlider" layoutX="251.0" layoutY="464.0" max="10" min="1" prefHeight="14.0" prefWidth="149.0" />
+      <Button layoutX="238.0" layoutY="574.0" mnemonicParsing="false" onAction="#handlePaging" prefHeight="39.0" prefWidth="126.0" text="View Paging" textAlignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="137.0" layoutY="499.0" prefHeight="25.0" prefWidth="90.0" text="             Entity" textAlignment="RIGHT">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="valueLabel" layoutX="400.0" layoutY="463.0" prefHeight="17.0" prefWidth="33.0" text="Label">
+         <font>
+            <Font name="Berlin Sans FB" size="13.0" />
+         </font></Label>
+      <ComboBox fx:id="entityComboBox" layoutX="250.0" layoutY="499.0" prefWidth="150.0" />
+      <Label layoutX="143.0" layoutY="289.0" prefHeight="25.0" prefWidth="78.0" text="    Password" textAlignment="RIGHT">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="passwordField" layoutX="247.0" layoutY="289.0" />
+   </children>
+</Pane>

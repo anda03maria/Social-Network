@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="417.0" style="-fx-background-image: url('org/example/lab7/v882batch2-kul-05.jpg'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab7.controller.ChatWindowController">
+   <children>
+      <Button layoutX="305.0" layoutY="453.0" mnemonicParsing="false" onAction="#handleSendMessage" prefHeight="26.0" prefWidth="100.0" text="Send message">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Button>
+      <ListView fx:id="conversationListView" layoutX="18.0" layoutY="214.0" onMouseClicked="#handleReply" prefHeight="142.0" prefWidth="381.0" />
+      <TableView fx:id="tableViewFriends" layoutX="18.0" layoutY="72.0" onMouseClicked="#handleShowConversation" prefHeight="142.0" prefWidth="381.0">
+        <columns>
+          <TableColumn fx:id="tableColumnUsername" prefWidth="84.39996528625488" text="Username" />
+          <TableColumn fx:id="tableColumnFirstName" prefWidth="97.20000457763672" text="First name" />
+            <TableColumn fx:id="tableColumnLastName" prefWidth="98.0" text="Last Name" />
+            <TableColumn fx:id="tableColumnEmail" prefWidth="99.39999389648438" text="Email" />
+        </columns>
+      </TableView>
+      <Label layoutX="16.0" layoutY="43.0" text="Search conversation">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="8.0" text="User's chat">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="messageTextArea" layoutX="10.0" layoutY="515.0" prefHeight="103.0" prefWidth="397.0" />
+      <TextField fx:id="usersTextField" layoutX="13.0" layoutY="454.0" prefHeight="25.0" prefWidth="281.0" />
+      <Label layoutX="13.0" layoutY="378.0" text="Type new message">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="485.0" prefHeight="22.0" prefWidth="108.0" text="Type message: ">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="421.0" prefHeight="22.0" prefWidth="108.0" text="Type users: ">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="-3.0" layoutY="364.0" prefHeight="5.0" prefWidth="424.0" />
+      <Button fx:id="handleClose" layoutX="330.0" layoutY="627.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="25.0" prefWidth="75.0" text="Close chat">
+         <font>
+            <Font name="Berlin Sans FB" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

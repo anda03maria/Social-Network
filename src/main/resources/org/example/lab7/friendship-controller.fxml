@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="155.0" prefWidth="323.0" style="-fx-background-image: url('org/example/lab7/v882batch2-kul-05.jpg'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab7.controller.FriendshipController">
+   <children>
+      <Button layoutX="105.0" layoutY="109.0" mnemonicParsing="false" onAction="#handleDeleteFriendship" text="Delete friend">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font></Button>
+      <Label layoutX="26.0" layoutY="14.0" text="Do you want to delete friend?">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="61.0" prefHeight="17.0" prefWidth="73.0" text="Friends from">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateLabel" layoutX="165.0" layoutY="61.0" prefHeight="17.0" prefWidth="81.0" text="Label">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Label>
+   </children>
+</Pane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="601.0" style="-fx-background-image: url('org/example/lab7/v882batch2-kul-03.jpg'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab7.controller.EditUserController">
+   <children>
+      <Button layoutX="254.0" layoutY="323.0" mnemonicParsing="false" onAction="#updateUser" prefHeight="40.0" prefWidth="92.0" text="Update">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="196.0" layoutY="14.0" prefHeight="34.0" prefWidth="209.0" text="Update user's data">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="205.0" layoutY="119.0" prefHeight="24.0" prefWidth="63.0" text="Username">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="157.0" prefHeight="24.0" prefWidth="126.0" text="Introduce new value" textAlignment="RIGHT">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="199.0" layoutY="202.0" prefHeight="24.0" prefWidth="74.0" text="Choose field">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxParameterType" layoutX="291.0" layoutY="202.0" prefWidth="150.0" />
+      <TextField fx:id="textFieldNewParam" layoutX="292.0" layoutY="157.0" />
+      <TextField fx:id="textFieldUsername" layoutX="292.0" layoutY="118.0" />
+   </children>
+</Pane>
